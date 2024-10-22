@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1E2557"
+    tools:context=".Result">
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="402dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="8dp"
+        android:text="You Lost The Game"
+        android:textAlignment="center"
+        android:textColor="#F4EDED"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewResult" />
+
+    <Button
+        android:id="@+id/buttonRestart"
+        android:layout_width="314dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="77dp"
+        android:layout_marginEnd="49dp"
+        android:text="Restart"
+        android:textAlignment="center"
+        android:textColor="#F2EDED"
+        android:textColorHint="#D0BEBE"
+        android:textColorLink="#BAAFAF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewResult" />
+
+    <ImageView
+        android:id="@+id/imageViewResult"
+        android:layout_width="521dp"
+        android:layout_height="267dp"
+        android:layout_marginTop="98dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/lost_foreground" />
+</androidx.constraintlayout.widget.ConstraintLayout>
